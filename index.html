@@ -7,11 +7,15 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
+            background-color: #f4f4f9;
         }
         .navbar {
-            margin-bottom: 20px;
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
         }
         .profile-pic {
             width: 150px;
@@ -19,12 +23,26 @@
             border-radius: 50%;
             margin: 20px 0;
         }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .about-section, .skills-section, .experience-section, .projects-section, .education-section, .contact-section {
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Inayat Nathani</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +62,13 @@
 </nav>
 
 <!-- About Section -->
-<section id="about" class="container">
+<section id="about" class="about-section container">
     <div class="row">
-        <div class="col-md-4">
-            <img src="images/profile.jpg" alt="Inayat Nathani" class="profile-pic">
+        <div class="col-md-4 text-center">
+            <img src="images/profile.jpg" alt="Inayat Nathani" class="profile-pic img-fluid">
         </div>
         <div class="col-md-8">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <p>I am a software developer with experience in version control systems, frontend, databases, and backend development. I am passionate about creating innovative digital solutions and driven by continuous learning and development.</p>
             <h4>Languages</h4>
             <ul>
@@ -69,10 +87,10 @@
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="container mt-5">
-    <h2>Skills</h2>
+<section id="skills" class="skills-section container bg-light">
+    <h2 class="section-title">Skills</h2>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <h4>Core Skills</h4>
             <ul>
                 <li>Datavetenskap</li>
@@ -80,7 +98,7 @@
                 <li>Kvalitetssäkring</li>
             </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <h4>Technologies</h4>
             <ul>
                 <li>Git & GitHub</li>
@@ -93,8 +111,8 @@
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="container mt-5">
-    <h2>Experience</h2>
+<section id="experience" class="experience-section container">
+    <h2 class="section-title">Experience</h2>
     <div class="row">
         <div class="col-md-12">
             <h4>Herrljunga Kommun</h4>
@@ -114,8 +132,8 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="container mt-5">
-    <h2>Projects</h2>
+<section id="projects" class="projects-section container bg-light">
+    <h2 class="section-title">Projects</h2>
     <div class="row">
         <div class="col-md-12">
             <p>Check out my projects on <a href="https://github.com/INYAT-gif?tab=repositories">GitHub</a>.</p>
@@ -124,8 +142,8 @@
 </section>
 
 <!-- Education Section -->
-<section id="education" class="container mt-5">
-    <h2>Education</h2>
+<section id="education" class="education-section container">
+    <h2 class="section-title">Education</h2>
     <div class="row">
         <div class="col-md-12">
             <h4>Campus Mölndal</h4>
@@ -144,8 +162,8 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container mt-5">
-    <h2>Contact</h2>
+<section id="contact" class="contact-section container bg-light">
+    <h2 class="section-title">Contact</h2>
     <div class="row">
         <div class="col-md-12">
             <p>Email: <a href="mailto:inayatnathani@gmail.com">inayatnathani@gmail.com</a></p>
@@ -156,7 +174,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-light text-center py-4">
+<footer class="footer">
     <p>&copy; 2024 Inayat Nathani. All Rights Reserved.</p>
 </footer>
 
