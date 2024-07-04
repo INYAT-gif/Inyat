@@ -1,183 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inayat Nathani's Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Inayat Nathani - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* General Body and Typography */
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
+            background: #f4f7fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            padding-top: 20px;
         }
-        .navbar {
-            background-color: #343a40;
+        
+        h1, h2, h5 {
+            font-weight: bold;
         }
-        .navbar-brand, .nav-link {
-            color: #fff !important;
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0056b3;
+            margin-bottom: 0.5rem;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 20px 0;
-        }
+
         .section-title {
-            font-size: 2em;
+            font-size: 1.75rem;
+            color: #333;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
             margin-bottom: 20px;
-            color: #343a40;
         }
-        .about-section, .skills-section, .experience-section, .projects-section, .education-section, .contact-section {
-            padding: 60px 0;
+
+        /* Header Styles */
+        header {
+            margin-bottom: 50px;
         }
-        .footer {
-            background-color: #343a40;
+
+        header p {
+            font-size: 1.25rem;
+            color: #0056b3;
+        }
+
+        /* Profile Section */
+        section p {
+            margin-bottom: 0.5rem;
+        }
+
+        section a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Card Styling */
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #0056b3;
+        }
+
+        .card-subtitle {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* List Groups */
+        .list-group-item {
+            border: none;
+            background: none;
+            font-size: 1.125rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0056b3;
             color: #fff;
-            text-align: center;
-            padding: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .card-title {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header class="text-center mb-4">
+            <h1>Inayat Nathani</h1>
+            <p class="text-muted">#OPEN_TO_WORK</p>
+        </header>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Inayat Nathani</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+        <section class="mb-5">
+            <h2 class="section-title">Profil</h2>
+            <p><strong>Inayat Nathani</strong></p>
+            <p>Software Developer</p>
+            <p>Sverige </p>
+            <p>Tillgänglig även via <a href="http://www.vuega.se" target="_blank">Vuega.se</a></p>
+            <p><strong>Öppen för nya möjligheter:</strong> Roller som Projektledare och utvecklare, Full Stack Developer, Back-end Developer, Application Developer och Web Application Developer</p>
+        </section>
 
-<!-- About Section -->
-<section id="about" class="about-section container">
-    <div class="row">
-        <div class="col-md-4 text-center">
-            <img src="images/profile.jpg" alt="Inayat Nathani" class="profile-pic img-fluid">
-        </div>
-        <div class="col-md-8">
-            <h2 class="section-title">About Me</h2>
-            <p>I am a software developer with experience in version control systems, frontend, databases, and backend development. I am passionate about creating innovative digital solutions and driven by continuous learning and development.</p>
-            <h4>Languages</h4>
+        <section class="mb-5">
+            <h2 class="section-title">Om</h2>
+            <p>Software Developer med färdigheter inom versionshanteringssystem, frontend, databas och backend.</p>
             <ul>
-                <li>English: Full Professional</li>
-                <li>Swedish: Full Professional</li>
-                <li>Hindi: Limited Working</li>
-                <li>Gujarati: Native or Bilingual</li>
+                <li><strong>Versionshanteringssystem:</strong> Git & GitHub.</li>
+                <li><strong>Frontend:</strong> HTML, CSS, Bootstrap & Grid Layout, modern JavaScript, React Hooks, React Axios & Router.</li>
+                <li><strong>Databas:</strong> MySQL, Java Database Connectivity.</li>
+                <li><strong>Backend:</strong> Java Enterprise Edition/Spring Boot/JPA/Hibernate ORM/Data JPA/Spring RESTful APIs/XML & JSON.</li>
             </ul>
-            <h4>Certifications</h4>
-            <ul>
-                <li>The Hour of Code</li>
-                <li>Document Workflow Automation</li>
+            <p>Jag har även erfarenhet av IT-projektledning och systemimplementering. Passionerad om att skapa innovativa digitala lösningar, driven av kontinuerligt lärande och utveckling.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="section-title">Erfarenhet</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Projektledare IT @ Herrljunga och Vårgårda kommun</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">jan. 2023–dec. 2023 · Västra Götaland, Sverige</h6>
+                    <p class="card-text">Vi på IT-enheten arbetade enligt "Agilt" arbetssätt. Detta innebär att vi börjar arbetet med ett Kanban möte...</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">IT-Projektledare (Praktik)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">aug. 2022–dec. 2022 · Herrljunga och Vårgårda kommuner</h6>
+                    <p class="card-text">Stark autentisering och Single Sign On. Använda tvåfaktorsautentisering...</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Ledsagare och teknisk ansvarig för verksamhetsbehov</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">feb. 2017–juli 2021 · Trollhättans Stad</h6>
+                    <p class="card-text">Datavetenskap</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="section-title">Utbildning</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Campus Mölndal</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Kvalificerad Yrkeshögskoleexamen, IT-Projektledare</h6>
+                    <p class="card-text">2021–2022</p>
+                    <ul>
+                        <li>Grupputveckling</li>
+                        <li>Projektmetodik</li>
+                        <li>Teknisk grundkurs (IT-säkerhet, server och nätverk)</li>
+                        <li>Ledarskap</li>
+                        <li>Affärsmannaskap</li>
+                        <li>Teknisk fördjupning (Mjukvaruutveckling, molnplattformar och trender)</li>
+                        <li>IT Service Management och ITIL</li>
+                        <li>Förändringsledning</li>
+                        <li>Agila arbetssätt</li>
+                        <li>Lärande i arbete</li>
+                        <li>Examensarbete</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="section-title">Licenser och certifikat</h2>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="hour_of_code_certificate.jpg" class="img-fluid rounded-start certificate-img" alt="The hour of Code Certificate">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">The hour of Code</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Code.org · Utfärdad okt. 2023</h6>
+                            <p class="card-text">Legitimerings-ID: inyat468</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="section-title">Kompetenser</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Processförbättring</li>
+                <li class="list-group-item">Analytisk förmåga</li>
+                <li class="list-group-item">Datavetenskap</li>
             </ul>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills-section container bg-light">
-    <h2 class="section-title">Skills</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <h4>Core Skills</h4>
-            <ul>
-                <li>Datavetenskap</li>
-                <li>Analytisk förmåga</li>
-                <li>Kvalitetssäkring</li>
+        <section class="mb-5">
+            <h2 class="section-title">Språk</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Engelska (Fullständig professionell nivå)</li>
+                <li class="list-group-item">Gujarati (Modersmåls- eller tvåspråkig nivå)</li>
             </ul>
-        </div>
-        <div class="col-md-6">
-            <h4>Technologies</h4>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>HTML, CSS, Bootstrap</li>
-                <li>JavaScript, React</li>
-                <li>MySQL, Java EE, Spring Boot</li>
-            </ul>
-        </div>
+        </section>
+
+        <footer class="text-center mt-5">
+            <p>&copy; 2024 Inayat Nathani</p>
+        </footer>
     </div>
-</section>
 
-<!-- Experience Section -->
-<section id="experience" class="experience-section container">
-    <h2 class="section-title">Experience</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Herrljunga Kommun</h4>
-            <p>IT Project Manager (January 2023 - December 2023)</p>
-            <p>Managed various projects including a large implementation project for the educational administration and AD login implementation.</p>
-            
-            <h4>Trollhättans Stad</h4>
-            <p>Ledsagare och teknisk ansvarig (February 2017 - July 2021)</p>
-            
-            <h4>Trade Links</h4>
-            <p>Export Manager (2009 - 2011)</p>
-            
-            <h4>Mail Options</h4>
-            <p>Ekonomiassistent (September 2005 - August 2008)</p>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section container bg-light">
-    <h2 class="section-title">Projects</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <p>Check out my projects on <a href="https://github.com/INYAT-gif?tab=repositories">GitHub</a>.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="education-section container">
-    <h2 class="section-title">Education</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Campus Mölndal</h4>
-            <p>Kvalificerad Yrkeshögskoleexamen, IT-Projektledare (2021 - 2022)</p>
-            
-            <h4>Lexicon University</h4>
-            <p>FullStack-Utvecklare (January 2024 - November 2024)</p>
-            
-            <h4>Linnaeus University</h4>
-            <p>Avancerad nivå, Informationssystem (2016 - 2017)</p>
-            
-            <h4>Högskolan Väst</h4>
-            <p>Filosofie kandidatexamen med inriktning mot statsvetenskap och ekonomi (2013 - 2016)</p>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section container bg-light">
-    <h2 class="section-title">Contact</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <p>Email: <a href="mailto:inayatnathani@gmail.com">inayatnathani@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/inyat">https://www.linkedin.com/in/inyat</a></p>
-            <p>GitHub: <a href="https://github.com/INYAT-gif">https://github.com/INYAT-gif</a></p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2024 Inayat Nathani. All Rights Reserved.</p>
-</footer>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
