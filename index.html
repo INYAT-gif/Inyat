@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inayat Nathani - Portfolio</title>
+    <title>Inyat Nathani - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* General Body and Typography */
@@ -12,8 +12,9 @@
             font-family: 'Arial', sans-serif;
             color: #333;
             padding-top: 20px;
+            line-height: 1.6;
         }
-        
+
         h1, h2, h5 {
             font-weight: bold;
         }
@@ -122,133 +123,123 @@
                 font-size: 1.25rem;
             }
         }
+
+        .project-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h5 {
+            color: #0056b3;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1.125rem;
+            color: #333;
+        }
+
+        .project-card a {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.125rem;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <header class="text-center mb-4">
-            <h1>Inayat Nathani</h1>
+            <h1>Inyat Nathani</h1>
             <p class="text-muted">Software Developer</p>
         </header>
 
+        <!-- Contact Info -->
         <section class="contact-info text-center mb-4">
             <p><strong>Telefon:</strong> 0760256712</p>
             <p><strong>Adress:</strong> Västra Götaland</p>
             <p><strong>E-post:</strong> inyat.nathani@gmail.com</p>
         </section>
 
+        <!-- About Section -->
         <section class="mb-5">
-            <p>Tillgänglig även via <a href="http://www.vuega.se" target="_blank">Vuega.se</a></p>
-            <p><strong>Öppen för nya möjligheter:</strong> Roller som Projektledare och utvecklare, Full Stack Developer, Back-end Developer, Application Developer och Web Application Developer</p>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="section-title">Om</h2>
-            <p>Software Developer med färdigheter inom versionshanteringssystem, frontend, databas och backend.</p>
+            <h2 class="section-title">Om mig</h2>
+            <p>Jag är en Software Developer med omfattande kunskap inom versionshanteringssystem, frontend, databas och backend. Jag har en stark passion för att skapa innovativa IT-lösningar och arbetar ständigt med att utveckla mina färdigheter.</p>
             <ul>
                 <li><strong>Versionshanteringssystem:</strong> Git & GitHub.</li>
-                <li><strong>Frontend:</strong> HTML, CSS, Bootstrap & Grid Layout, modern JavaScript, React Hooks, React Axios & Router.</li>
+                <li><strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript, React Hooks, React Axios & Router.</li>
                 <li><strong>Databas:</strong> MySQL, Java Database Connectivity.</li>
-                <li><strong>Backend:</strong> Java Enterprise Edition/Spring Boot/JPA/Hibernate ORM/Data JPA/Spring RESTful APIs/XML & JSON.</li>
+                <li><strong>Backend:</strong> Java EE, Spring Boot, JPA, Hibernate ORM, RESTful APIs.</li>
             </ul>
-            <p>Jag har även erfarenhet av IT-projektledning och systemimplementering. Passionerad om att skapa innovativa digitala lösningar, driven av kontinuerligt lärande och utveckling.</p>
         </section>
 
+        <!-- Experience Section -->
         <section class="mb-5">
             <h2 class="section-title">Erfarenhet</h2>
             <div class="card mb-3">
                 <div class="card-body">
+                    <h5 class="card-title">Internship @ Bright Skills</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">September 2024 - Pågående</h6>
+                    <p class="card-text">Systemutvecklare / Programmerare. Migrering av en Traditional Web App till React Web App. Systemet inkluderar funktioner såsom intranät, tidsrapportering och integration med Fortnox för fakturahantering och CRM.</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
                     <h5 class="card-title">Projektledare IT @ Herrljunga och Vårgårda kommun</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">jan. 2023–dec. 2023 · Västra Götaland, Sverige</h6>
-                    <p class="card-text">Vi på IT-enheten arbetade enligt "Agilt" arbetssätt. Detta innebär att vi börjar arbetet med ett Kanban möte...</p>
+                    <h6 class="card-subtitle mb-2 text-muted">Jan 2023 - Dec 2023</h6>
+                    <p class="card-text">Drev flera IT-projekt självständigt med fokus på systemimplementering och AD-inloggning genom federation.</p>
                 </div>
             </div>
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">IT-Projektledare (Praktik)</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">aug. 2022–dec. 2022 · Herrljunga och Vårgårda kommuner</h6>
-                    <p class="card-text">Stark autentisering och Single Sign On. Använda tvåfaktorsautentisering...</p>
+                    <h6 class="card-subtitle mb-2 text-muted">Aug 2022 - Dec 2022</h6>
+                    <p class="card-text">Ledde implementationen av stark autentisering och Single Sign-On, samt hantering av tvåfaktorsautentisering.</p>
                 </div>
             </div>
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Ledsagare och teknisk ansvarig för verksamhetsbehov</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">feb. 2017–juli 2021 · Trollhättans Stad</h6>
-                    <p class="card-text">Datavetenskap</p>
+                    <h5 class="card-title">Ledsagare och teknisk ansvarig @ Trollhättans Stad</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Feb 2017 - Jul 2021</h6>
+                    <p class="card-text">Ansvarade för verksamhetens tekniska behov inom hårdvara och mjukvara, samt stöd till arbetskamrater.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Education Section -->
         <section class="mb-5">
             <h2 class="section-title">Utbildning</h2>
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">Campus Mölndal</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Kvalificerad Yrkeshögskoleexamen, IT-Projektledare</h6>
-                    <p class="card-text">2021–2022</p>
+                    <h6 class="card-subtitle mb-2 text-muted">IT-Projektledare, 2021–2022</h6>
                     <ul>
-                        <li>Grupputveckling</li>
-                        <li>Projektmetodik</li>
                         <li>Teknisk grundkurs (IT-säkerhet, server och nätverk)</li>
-                        <li>Ledarskap</li>
-                        <li>Affärsmannaskap</li>
-                        <li>Teknisk fördjupning (Mjukvaruutveckling, molnplattformar och trender)</li>
-                        <li>IT Service Management och ITIL</li>
-                        <li>Förändringsledning</li>
-                        <li>Agila arbetssätt</li>
-                        <li>Lärande i arbete</li>
-                        <li>Examensarbete</li>
+                        <li>Ledarskap och affärsmannaskap</li>
+                        <li>Förändringsledning och agila arbetssätt</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="mb-5">
-            <h2 class="section-title">Licenser och certifikat</h2>
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">The hour of Code</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Issued by code.org</h6>
-                            <p class="card-text">jan. 2023 · No expiration date</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Cloud Computing</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Issued by University of Technology</h6>
-                            <p class="card-text">dec. 2022 · No expiration date</p>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h2 class="section-title">Projekt</h2>
+            <div class="project-card">
+                <h5>Borrow-a-Book-Library-App</h5>
+                <p>En app för hantering av boklån på bibliotek.</p>
+                <a href="https://github.com/yourusername/Borrow-a-Book-Library-App" target="_blank">Visa på GitHub</a>
+           
 
-        <section class="mb-5">
-            <h2 class="section-title">Språk</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Engelska (Fullständig professionell nivå)</li>
-                <li class="list-group-item">Svenska (Fullständig professionell nivå)</li>
-            </ul>
-        </section>
-
-        <footer class="text-center mt-5">
-            <p>&copy; 2024 Inayat Nathani</p>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
